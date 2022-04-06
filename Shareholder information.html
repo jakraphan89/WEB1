@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shareholder information</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid bg-white p-0 py-5">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restoran</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="menu.html" class="nav-item nav-link active">Menu</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="booking.html" class="dropdown-item">Booking</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-primary py-2 px-4">Book A Table</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Shareholder information
+                    </h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Shareholder information
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!--Content start-->
+        <div class="container mt-3 box-shadow pb-3">
+            
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                        type="button" role="tab" aria-controls="home" aria-selected="true">General Information</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                        type="button" role="tab" aria-controls="profile" aria-selected="false">Shareholding Structure of
+                        the Company Group</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                        type="button" role="tab" aria-controls="contact" aria-selected="false">Major
+                        Shareholders</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact2-tab" data-bs-toggle="tab" data-bs-target="#contact2" type="button" role="tab" aria-controls="contact2" aria-selected="false">Dividend Payment Policy</button>
+                  </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                    <!--table start-->
+
+                    <table class="mt-4">
+                        <thead>
+                            <tr">
+                                <th class="text-primary">GENERAL INFORMATION</th>
+                                <th></th>
+                                <th></th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Thai name</td>
+                                <td>:</td>
+                                <td>บริษัท ซันสวีท จำกัด (มหาชน)</td>
+                            </tr>
+                            <tr>
+                                <td>English nam</td>
+                                <td>:</td>
+                                <td>Sunsweet Public Company Limited</td>
+                            </tr>
+                            <tr>
+                                <td>Registration number</td>
+                                <td>:</td>
+                                <td>0107560000354</td>
+                            </tr>
+                            <tr>
+                                <td>Securities Symbol</td>
+                                <td>:</td>
+                                <td>SUN</td>
+                            </tr>
+                            <tr>
+                                <td>Nature of business</td>
+                                <td>:</td>
+                                <td>Manufactures and distributes processed sweet corn and agricultural products
+                                    including sourcing food and agricultural products</td>
+                            </tr>
+                            <tr>
+                                <td>Head Office</td>
+                                <td>:</td>
+                                <td>No. 9 Moo 1, Toongsatok subdistrict, Sanpatong district, Chiang Mai province 50120
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Telephone no.</td>
+                                <td>:</td>
+                                <td>(66) 53-106-538-40</td>
+                            </tr>
+                            <tr>
+                                <td>Fax no.</td>
+                                <td>:</td>
+                                <td>(66) 53-106-541</td>
+                            </tr>
+                            <tr>
+                                <td>Website (URL)</td>
+                                <td>:</td>
+                                <td>www.sunsweetthai.com</td>
+                            </tr>
+                            <tr>
+                                <td>Registered capital</td>
+                                <td>:</td>
+                                <td>215,000,000 (two hundred fifteen million baht)</td>
+                            </tr>
+                            <tr>
+                                <td>Issued and paid-up share capital (Pre IPO</td>
+                                <td>:</td>
+                                <td>215,000,000 (two hundred fifteen million baht)</td>
+                            </tr>
+                            <tr>
+                                <td>Issued and paid-up share capital (Post IPO)</td>
+                                <td>:</td>
+                                <td>215,000,000 (two hundred fifteen million baht)</td>
+                            </tr>
+                            <tr>
+                                <td>Par value per share</td>
+                                <td>:</td>
+                                <td>0.50 baht (fifty satang)</td>
+                            </tr>
+                        </tbody>
+                        <thead>
+                            <tr>
+                            </tr>
+                    </table>
+
+                    <table>
+                        <table>
+                            <th class="text-primary pt-4">INFORMATION OF SUBSIDIARY</th>
+                            <th></th>
+                            <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Thai name</td>
+                                    <td>:</td>
+                                    <td>บริษัท ซันสวีท อินเตอร์เนชั่นแนล จำกัด</td>
+                                </tr>
+                                <tr>
+                                    <td>English name</td>
+                                    <td>:</td>
+                                    <td>Sunsweet International Company Limited</td>
+                                </tr>
+                                <tr>
+                                    <td>Nature of business</td>
+                                    <td>:</td>
+                                    <td>Sourcing (exporting &amp; importing) food and agricultural products</td>
+                                </tr>
+                                <tr>
+                                    <td>Registered capital</td>
+                                    <td>:</td>
+                                    <td>5,000,000 (Five Million Baht)</td>
+                                </tr>
+                                <tr>
+                                    <td>Issued and paid-up share capital</td>
+                                    <td>:</td>
+                                    <td>5,000,000 (Five Million Baht)</td>
+                                </tr>
+                                <tr>
+                                    <td>Par value per share</td>
+                                    <td>:</td>
+                                    <td>10 baht (ten baht)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div>
+                            <h5></h5>
+                            <h6></h6>
+
+                            <br>
+                            <br>
+                            <h5>KEY INFORMATION</h5>
+                        </div>
+
+                        <table>
+                            <thead>
+                                <tr">
+                                    <th class="h6 text-primary pt-4">SECURITIES REGISTRAR</th>
+                                    <th></th>
+                                    <th></th>
+                                    </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Name of company</td>
+                                    <td>:</td>
+                                    <td>Thailand Securities Depository Co., Ltd.</td>
+                                </tr>
+                                <tr>
+                                    <td>Location</td>
+                                    <td>:</td>
+                                    <td>No. 9, Ratchadapisek Road, Dindaeng, Bangkok, Thailand.</td>
+                                </tr>
+                                <tr>
+                                    <td>Telephone no.</td>
+                                    <td>:</td>
+                                    <td>0-2009-9000</td>
+                                </tr>
+                                <tr>
+                                    <td>Fax no</td>
+                                    <td>:</td>
+                                    <td>0-2009-9991</td>
+                                </tr>
+                                <tr>
+                                    <td>Website</td>
+                                    <td>:</td>
+                                    <td>www.set.or.th</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+
+                        <table>
+                            <thead>
+                                <th class="h6 text-primary">AUDITING COMPANY</th>
+                                <th></th>
+                                <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Name of company</td>
+                                    <td>:</td>
+                                    <td>PricewaterhouseCoopers ABAS Ltd.</td>
+                                </tr>
+                                <tr>
+                                    <td>Location</td>
+                                    <td>:</td>
+                                    <td>No. 179 / 74-80, Bangkok City Tower, 15th Floor, South Sathorn Road,
+                                        Tungmahamek, Sathorn, Bangkok.</td>
+                                </tr>
+                                <tr>
+                                    <td>Telephone no.</td>
+                                    <td>:</td>
+                                    <td>0-2344-1000, 0-2824-5000</td>
+                                </tr>
+                                <tr>
+                                    <td>Fax no.</td>
+                                    <td>:</td>
+                                    <td>0-2286-0500</td>
+                                </tr>
+                                <tr>
+                                    <td>Website</td>
+                                    <td>:</td>
+                                    <td>www.pwc.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!--table end-->
+
+
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="text-center my-4">
+                        <img src="/media/BG/Shareholding-Structure-of-the-Company-Group-copy-1.jpg" style="width: 100%;"
+                            alt="">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+                    <table class="table my-4 py-5 ">
+                        <thead>
+                            <tr class="cmsms_table_row_header">
+                                <th>NO.</th>
+                                <th>SHAREHOLDER’S NAMES</th>
+                                <th>AMOUNT OF SHARES (SHARES)</th>
+                                <th>PROPORTION (%)</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>MRS. JIRAPORN KITTIKHUNCHAI</td>
+                                <td>300,055,000</td>
+                                <td>69.78</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Thai NVDR Company Limited</td>
+                                <td>23,797,210</td>
+                                <td>5.53</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>MR.ONGART KITTIKHUNCHAI</td>
+                                <td>10,500,000</td>
+                                <td>2.44</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>MS.JITKANYA RUNGNOKTAI</td>
+                                <td>4,228,500</td>
+                                <td>0.98</td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>MRS. SIRIKORN TECHANITISAWAD</td>
+                                <td>3,600,000</td>
+                                <td>0.84</td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>MR.RAVI KASEMSARN</td>
+                                <td>3,000,000</td>
+                                <td>0.70</td>
+                            </tr>
+                            <tr>
+                                <td>7.</td>
+                                <td>MR.WIBOON TRAKULPOONSUB</td>
+                                <td>2,500,000</td>
+                                <td>0.58</td>
+                            </tr>
+                            <tr>
+                                <td>8.</td>
+                                <td>MS.MORAKOT KITTIKHUNCHAI</td>
+                                <td>2,066,400</td>
+                                <td>0.48</td>
+                            </tr>
+                            <tr>
+                                <td>9.</td>
+                                <td>SWAN INDUSTRIES (THAILAND) LIMITED</td>
+                                <td>2,050,000</td>
+                                <td>0.48</td>
+                            </tr>
+                            <tr>
+                                <td>10.</td>
+                                <td>MR. WORAPONG NANDABHIWAT</td>
+                                <td>1,700,000</td>
+                                <td>0.40</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Other shareholders</td>
+                                <td>109,215,900.00</td>
+                                <td>25.40</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="cmsms_table_row_footer">
+                                <td>Total</td>
+                                <td></td>
+                                <td>430,000,000.00</td>
+                                <td>100.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact2-tab">
+                    <div class="container my-4  ">
+                        <h3 style="color: #fb6f1d;">Dividend Policy</h3>
+                            <p>The company has the policy to pay dividends at the rate of no less than 50 percent of the net profit after deduction of all reserves as stipulated in the Company’s Articles of Association and the law. If there are no other necessities, the dividend payment will not significantly affect the normal operation of the Company.
+                            <br><br>     
+                            However, the dividend payment may change. This will depend on company performance. The Company’s financial position, liquidity, investment plan, and other factors related to the management, necessity and other appropriateness in the future. Dividend payment will be under the authority of the Board of Directors. The resolution of the Board of Directors regarding the approval of the dividend payment must be submitted to the shareholders’ meeting for consideration, except for the interim dividend payment. The Board of Directors is authorized to approve the interim dividend payment. The meeting must be informed at the next meeting.
+                                <br><br>
+                            Subsidiaries will consider the dividend policy proposed by the Board of Directors based on the performance and appropriateness of other factors.
+                        </p>
+
+                        <table>
+                            <table class="table my-5">
+                                <thead>
+                                <tr>
+                                <th>DETAIL OF DIVIDEND DISTRIBUTION (MILLION BAHT)</th>
+                                <th>2017</th>
+                                <th>2018</th>
+                                <th>2019</th>
+                                <th>2020</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                <td>Net profit (Separate financial statements)</td>
+                                <td>120.19</td>
+                                <td>56.66</td>
+                                <td>42.16</td>
+                                <td>192.78</td>
+                                </tr>
+                                <tr>
+                                <td>Legal reserve</td>
+                                <td>8.50</td>
+                                <td>2.90</td>
+                                <td>–</td>
+                                <td>10.00</td>
+                                </tr>
+                                <tr>
+                                <td>Net profit (after deducting legal reserve</td>
+                                <td>111.69</td>
+                                <td>53.76</td>
+                                <td>42.16</td>
+                                <td>182.78</td>
+                                </tr>
+                                <tr>
+                                <td>Dividend paid</td>
+                                <td>156.48/<sup>1</sup></td>
+                                <td>43.00/<sup>1</sup></td>
+                                <td>–/<sup>3</sup></td>
+                                <td>150.50/<sup>4</sup></td>
+                                </tr>
+                                <tr>
+                                <td>Dividend Payout Ratio (After deduction of the legal reserve)</td>
+                                <td>140.10</td>
+                                <td>79.98</td>
+                                <td>–</td>
+                                <td>82.34</td>
+                                </tr>
+                                </tbody>
+                                </table>
+                        </table>
+                        <p>Remark:/1
+                            <br>
+                            <br>   
+                            -The Extraordinary General Meeting of Shareholders No. 3/2017 held on May 11, 2017 passed a resolution approving the payment of interim dividend from not apportioned retained earnings as at 31 December 2017 (the latest audited financial statements paid at the considered time). The dividend was paid to shareholders at the rate of Baht 43.50 per share, totaling Baht 46,980,000. The dividend was paid to shareholders on May 22, 2017.
+                            -The Board of Directors Meeting No. 3/2017 held on November 13, 2017 resolved to approve the interim dividend payment from not apportioned retained earnings as at 30 September 2017 to the shareholders. At the rate of Baht 0.15 per share, the total dividend payment was Baht 45,000,000 and the dividend payment was scheduled to be made on November 21, 2017.
+                            -The Annual General Meeting of Shareholders of 2018 held on April 23, 2018 resolved to approve the dividend payment from the year 2017 to the shareholders whose names are listed in the shareholders list of the Company as at May 3, 2018, the total shares of Baht 430,000,000 at the rate of Baht 0.15 per share, totaling dividend payment of Baht 64.50 million
+                            <br>
+                            <br>
+                            
+                            Remark:: /2
+                            <br>
+                            <br>
+                            – The Board of Directors Meeting No. 4/2018 on November 7, 2018 resolved to approve the interim dividend payment from the operating results between 1 January 2018 to 30 September 2018 to shareholders whose names are listed in the list of accounts. The name of the shareholder of the company as of 21 November 2018, amounting to 430,000,000 shares at the rate of 0.05 baht per share, representing a total dividend of 21.50 million baht and has paid dividends to the shareholders on December 6, 2018.
+                            <br>
+                            <br>
+                            Remark: /3
+                            <br>
+                            <br>
+                            – The Annual General Meeting of Shareholders of 2019 held on April 22, 2019 resolved to approve the dividend payment from the year 2018 to the shareholders whose names are listed in the shareholders list of the Company as at May 2, 2019, the total shares of Baht 430,000,000 at the rate of Baht 0.15 per share, totaling dividend payment of Baht 21.50 million and has paid dividends to the shareholders on May 17, 2019.
+                            <br>
+                            <br>
+                            
+                            Remark:: /2
+                            <br>
+                            <br>
+                            – The Board of Directors Meeting No. 4/2018 on November 7, 2018 resolved to approve the interim dividend payment from the operating results between 1 January 2018 to 30 September 2018 to shareholders whose names are listed in the list of accounts. The name of the shareholder of the company as of 21 November 2018, amounting to 430,000,000 shares at the rate of 0.05 baht per share, representing a total dividend of 21.50 million baht and has paid dividends to the shareholders on December 6, 2018.
+                            <br>
+                            <br>
+                            Remark: /4
+                            <br>
+                            <br>
+                            – The Board of Directors Meeting No. 4/2020 on 7 August 2020 resolved to approve the interim dividend payment from the net profit in 2020 to shareholders whose names are listed in the list of a shareholder of the Company In 24 August 2020, amounting to 430,000,000 shares at the rate of 0.05 baht per share, representing a total dividend of 21.50 million baht and the dividends were paid to the shareholders on 3 September 2020.
+                            – The Board of Directors Meeting No. 2/2021 on 22 February 2021 resolved to approve a proposal to the Annual General Meeting of Shareholders of 2020 to pay a dividend from the net profit in 2020 to shareholders whose names are listed in the list of a shareholder of the Company In 28 April 2021, amounting to 430,000,000 shares at the rate of 0.30 baht per share, representing a total dividend of 129 million baht. The dividend was paid as 215,000,000 new ordinary shares of the Company with a par value of 0.50 baht to the Company’s shareholders at the rate of 2 existing ordinary shares per 1 dividend share, totaling 107,500,000 baht or equivalent to 0.25 baht per share, and paid in cash at the rate of 0.05 baht per share or totaling 21,500,000 baht. The dividend for the whole year is 0.35 baht per share.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!--Content end-->
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Reservation</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                        <p>09AM - 09PM</p>
+                        <h5 class="text-light fw-normal">Sunday</h5>
+                        <p>10AM - 08PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Your email">
+                            <button type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
+                            Distributed By <a class="border-bottom" href="https://themewagon.com"
+                                target="_blank">ThemeWagon</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
